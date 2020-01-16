@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 600px;
     object-fit: cover;
     backdrop-filter: grayscale(30%);
     display:block;
