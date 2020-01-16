@@ -1,0 +1,27 @@
+header{
+    height: 100vh;
+    object-fit: cover;
+    backdrop-filter: grayscale(30%);
+    display:block;
+    position:relative;
+}
+
+header::after {
+    background-image: url("images/portada.jpg");
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    }
+
+
+#welcome-page-title {
+    text-align: center;
+    padding-top: 40vh;
+    color: rojo;
+}
+
