@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="entertainment.css">
+    <title>Entertainment</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">WILD POBLENOU </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#">What to visit <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Entertainments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Here starts Rut's part -->
+    <!-- Starts the 4 picture menu -->
+    <div class="container">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-link" id="music-tab" data-toggle="tab" href="#music" role="tab" aria-controls="music"
+                    aria-selected="true">
+                    <img src="./images/entertainment_submenu_1.jpg">
+                </a>
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">
+                    <img src="./images/entertainment_submenu_2.jpg">
+                </a>
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                    aria-controls="contact" aria-selected="false">
+                    <img src="./images/entertainment_submenu_3.jpg">
+                </a>
+                <a class="nav-link" id="asdf-tab" data-toggle="tab" href="#asdf" role="tab" aria-controls="asdf"
+                    aria-selected="false">
+                    <img src="./images/entertainment_submenu_4.jpg">
+                </a>
+            </div>
+        </nav>
+
+        <!-- Starts the unfolded music/sports/entertainment/arts submenu -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Starts the music submenu -->
+            <div class="tab-pane fade" id="music" role="tabpanel" aria-labelledby="music-tab">
+                <h3 class="submenu-title">MUSIC</h3>
+                <hr class="submenu-hr">
+                <div class="card mb-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/music_submenu1.jpg" class="card-img"
+                                alt="Alanis Morissette playing the guitar in a concert">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Alanis Morissette in concert</h5>
+                                <p class="card-text">The canadian singer has decided to give a free concert now that
+                                    she's visiting Barcelona to record a clip for her next album's first single.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+
+                                <!-- Here starts the music modal -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter">
+                                    Tell me more!
+                                </button>
+
+
+                                <!-- Here finishes de music modal -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Finishes music submenu -->
+
+            <!-- Starts the Sports menu -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <br>
+                <br>
+                <h3 class="submenu-title">SPORTS</h3>
+                <hr class="submenu-hr">
+                <div class="card mb-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/sports_submenu1.jpg" class="card-img"
+                                alt="Man walking his dog while skating">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Let's all walk out dogs together while skating</h5>
+                                <p class="card-text">Take an active part in the no-car day and com walk your dog with
+                                    other dog owners commited with the environment</p>
+                                <p class="card-text"><small class="text-muted">Last updated 2 hours ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Finishes sports submenu -->
+            <!-- Starts the restaurants submenu -->
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <br>
+                <br>
+                <h3 class="submenu-title">RESTAURANTS</h3>
+                <hr class="submenu-hr">
+                <div class="card mb-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/restaurants_submenu1.jpg" class="card-img"
+                                alt="Pizza from the restaurant we recommend eating in this week">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">This week's restaurant recomendation</h5>
+                                <p class="card-text">This week, our Poblenou neighbours have had lunch all together in a
+                                    small italian restaurant owned by an african couple</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Finishes restaurants submenu -->
+            <!-- Starts the arts submenu -->
+            <div class="tab-pane fade" id="asdf" role="tabpanel" aria-labelledby="asdf-tab">
+                <br>
+                <br>
+                <h3 class="submenu-title">ARTS</h3>
+                <hr class="submenu-hr">
+                <div class="card mb-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/arts_submenu1.jpg" class="card-img"
+                                alt="A girl with her face painted after the Holi Festival in Barcelona">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Holi Festival in Poblenou</h5>
+                                <p class="card-text">If, as a kid, you enjoyed painting yourself better than painting
+                                    papers, Holi Festival is a must for you this Sunday morning</p>
+                                <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+
+                                <!-- START TESTING arts submenu closing fails >>>>>>> -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenterTwo">
+                                    Launch demo modal
+                                </button>
+                                <!-- STOP TESTING arts submenu closing fails >>>>>>>>> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Finishes the arts submenu -->
+        </div>
+    </div>
+
+    <!-- Modal Music -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                        Alanis Morissette in concert
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="detail-modal" src="./images/music_submenu1.jpg">
+                    <p>Looks like amazing things are happening in Alanis Morissette's life
+                        since the "Ironic" singer started recording her 21st studio album
+                        (to which we still don't know the name). The best news to people
+                        from Barcelona is that Morissette is going to perform live and for
+                        free in ABC night club on Monday 13th. The only thing you need to do
+                        if you wanna come to the concert is registering in Alanis' website
+                        and booking your free tickets.<br>Also, don't forget that, after the
+                        concert, Alanis is gonna be in a meet&greet with the ones of you
+                        that have some questions for he about this next album she's
+                        recording. The place is still unknown, but it will be revealed at
+                        some point during the concert, so you fans can't miss it!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Got
+                        it!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenterTwo" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    asdfs adf adf adf
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
