@@ -51,21 +51,21 @@
                     aria-selected="true">
                     <img src="./images/entertainment_submenu_1.jpg">
                 </a>
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                    aria-controls="profile" aria-selected="false">
+                <a class="nav-link" id="sports-tab" data-toggle="tab" href="#sports" role="tab"
+                    aria-controls="sports" aria-selected="false">
                     <img src="./images/entertainment_submenu_2.jpg">
                 </a>
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                    aria-controls="contact" aria-selected="false">
+                <a class="nav-link" id="restaurants-tab" data-toggle="tab" href="#restaurants" role="tab"
+                    aria-controls="restaurants" aria-selected="false">
                     <img src="./images/entertainment_submenu_3.jpg">
                 </a>
-                <a class="nav-link" id="asdf-tab" data-toggle="tab" href="#asdf" role="tab" aria-controls="asdf"
+                <a class="nav-link" id="arts-tab" data-toggle="tab" href="#arts" role="tab" aria-controls="arts"
                     aria-selected="false">
                     <img src="./images/entertainment_submenu_4.jpg">
                 </a>
             </div>
         </nav>
-
+        <!-- Finishes de 4 picture menu -->
         <!-- Starts the unfolded music/sports/entertainment/arts submenu -->
         <div class="tab-content" id="myTabContent">
             <!-- Starts the music submenu -->
@@ -87,14 +87,12 @@
 
 
                                 <!-- Here starts the music modal -->
-                                <!-- Button trigger modal -->
+                                <!-- Button trigger modal (in.container)-->
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModalCenter">
+                                    data-target="#exampleModalCenterMusic">
                                     Tell me more!
                                 </button>
-
-
-                                <!-- Here finishes de music modal -->
+                                <!-- Here finishes de music modal (in-container) -->
 
 
                             </div>
@@ -104,10 +102,8 @@
             </div>
             <!-- Finishes music submenu -->
 
-            <!-- Starts the Sports menu -->
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <br>
-                <br>
+            <!-- Starts the Sports submenu -->
+            <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
                 <h3 class="submenu-title">SPORTS</h3>
                 <hr class="submenu-hr">
                 <div class="card mb-12">
@@ -122,16 +118,24 @@
                                 <p class="card-text">Take an active part in the no-car day and com walk your dog with
                                     other dog owners commited with the environment</p>
                                 <p class="card-text"><small class="text-muted">Last updated 2 hours ago</small></p>
+
+                                <!-- Here starts the sports modal (in-container)-->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenterSports">
+                                    Tell me more!
+                                </button>
+                                <!-- Here finishes de sports modal (in-container)-->
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Finishes sports submenu -->
+
             <!-- Starts the restaurants submenu -->
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                <br>
-                <br>
+            <div class="tab-pane fade" id="restaurants" role="tabpanel" aria-labelledby="restaurants-tab">
                 <h3 class="submenu-title">RESTAURANTS</h3>
                 <hr class="submenu-hr">
                 <div class="card mb-12">
@@ -146,16 +150,24 @@
                                 <p class="card-text">This week, our Poblenou neighbours have had lunch all together in a
                                     small italian restaurant owned by an african couple</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+
+                                <!-- Here starts the restaurants modal (in-container)-->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenterRestaurants">
+                                    Tell me more!
+                                </button>
+                                <!-- Here finishes de restaurants modal (in-container)-->
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Finishes restaurants submenu -->
+
             <!-- Starts the arts submenu -->
-            <div class="tab-pane fade" id="asdf" role="tabpanel" aria-labelledby="asdf-tab">
-                <br>
-                <br>
+            <div class="tab-pane fade" id="arts" role="tabpanel" aria-labelledby="arts-tab">
                 <h3 class="submenu-title">ARTS</h3>
                 <hr class="submenu-hr">
                 <div class="card mb-12">
@@ -171,14 +183,12 @@
                                     papers, Holi Festival is a must for you this Sunday morning</p>
                                 <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
 
-                                <!-- START TESTING arts submenu closing fails >>>>>>> -->
+                                <!-- Here starts the sports modal (in-container)-->
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModalCenterTwo">
-                                    Launch demo modal
+                                    data-target="#exampleModalCenterArts">
+                                    Tell me more!
                                 </button>
-                                <!-- STOP TESTING arts submenu closing fails >>>>>>>>> -->
-
                             </div>
                         </div>
                     </div>
@@ -189,12 +199,12 @@
     </div>
 
     <!-- Modal Music -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    <div class="modal fade" id="exampleModalCenterMusic" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                    <h5 class="modal-title" id="exampleModalCenterTitleMusic">
                         Alanis Morissette in concert
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -216,35 +226,84 @@
                         some point during the concert, so you fans can't miss it!</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Got
-                        it!
-                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Got it!</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenterTwo" tabindex="-1" role="dialog"
+    <!-- Modal Sports -->
+    <div class="modal fade" id="exampleModalCenterSports" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalCenterTitleSports">
+                        Walking dogs while skating
+                    </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    asdfs adf adf adf
+                    <img class="detail-modal" src="./images/sports_submenu1.jpg">
+                    <p>So... if walking your dog is fun, and skating is fun... can you imagine how much fun would it be walking your dog white skating? Now, stop imagining and do it! Every Wednesday, 7pm, come walk your dog with us and the rest of your neighbours. And remember that, after the walk, we're all gonna be chatting while having a drink (water for the animals) at the Dog get me wrong cafe.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Got it!</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal Restaurants -->
+    <div class="modal fade" id="exampleModalCenterRestaurants" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitleRestaurants">
+                        This week our crew goes have breakfast
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="detail-modal" src="./images/restaurants_submenu1.jpg">
+                    <p>This week, in 'Getting to know Poblenou and its surroundings', our neighbours have decided to go have breakfast in the considered Top5 boulangeries in Poblenou. Each for one day of the week. The crew is going to talk about de food quality, the price and the service in a post on Friday.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Arts -->
+    <div class="modal fade" id="exampleModalCenterArts" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitleArts">
+                    Holi Festival in Poblenou
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="detail-modal" src="./images/arts_submenu1.jpg">
+                <p>A last minute expense made you stay at home these last summer holidays instead of flying to India? No worries! We bring you the best indian tradition for free! This Saturday morning, come to Plaça del Guix at 11am. Just remember to bring with you your best smile and lots of friends to share this experience with. The rest is up to us!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Got it!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
