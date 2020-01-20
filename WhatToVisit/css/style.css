@@ -1,0 +1,61 @@
+header{
+    width: 100%;
+    
+}
+#map-place{
+    position: relative;
+}
+
+#map{
+    object-fit: contain;
+    width: 100%;
+}
+    
+.button{
+    
+    border-radius: 25px;
+    position: absolute;
+}
+#but-rambla{
+    
+    top: 22%;
+    left: 34%;
+    
+}
+#but-subirach{
+    top:24%;
+    left: 39%;
+}
+#but-gandhi{
+    top:22%;
+    left: 54%;
+}
+#but-park{
+    top:57%;
+    left: 55%;
+}
+#but-bogatell{
+    top:65%;
+    left: 54%;
+}
+#but-cementerio{
+    top:64%;
+    left: 43%;
+}
+#but-beso{
+    top:59%;
+    left: 49%;
+}
+#but-maria{
+    top:33%;
+    left: 45%;
+}
+#but-prim{
+    top:47%;
+    left: 54%;
+}
+@media only screen and (max-width: 650px) {
+    #map-place{
+        display: none;
+    }
+}
