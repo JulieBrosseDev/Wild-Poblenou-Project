@@ -37,3 +37,8 @@ div.social-media{
  color: blue;
  font-size: large;
 }
+
+.col-md-3 .mx-auto {
+margin: 0 15px;
+padding: 5px;
+}
