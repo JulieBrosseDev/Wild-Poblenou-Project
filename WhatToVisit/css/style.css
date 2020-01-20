@@ -1,7 +1,9 @@
 header{
     width: 100%;
     
+    
 }
+
 #map-place{
     position: relative;
 }
@@ -54,8 +56,62 @@ header{
     top:47%;
     left: 54%;
 }
+.resize{
+    width:30%;
+}
+article{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+article img{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#texto1, #texto2, #texto3, #texto4, #texto5, #texto6, #texto7, #texto8, #texto9{
+    height: 200px;
+    overflow: hidden;
+}
+
+.position{
+    display: flex;
+    justify-content: flex-end;
+}
+.show{
+    overflow: visible !important;
+    height: 100% !important;
+
+}
+.hide{
+    display: none;
+}
+#less1, #less2, #less3, #less4, #less5, #less6, #less7, #less8, #less9{
+    display: none;
+}
+.lessshow{
+    display: block !important;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px ) {
+    .resize{
+        width: 50%;
+    }
+    
+}
+
 @media only screen and (max-width: 650px) {
     #map-place{
         display: none;
     }
+    .resize{
+        width: 98%;
+        
+    }
 }
+
+

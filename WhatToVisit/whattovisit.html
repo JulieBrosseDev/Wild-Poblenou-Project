@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/whattovisit.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container-fluid">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
             <a class="navbar-brand" href="#">WILD POBLENOU </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,24 +36,141 @@
                 </form>
             </div>
         </nav> 
-        <h1>WHAT TO VISIT?</h1>
-    </header>
-        <div id="map-place">
-        <img id="map" class="img-fluid" src="img/mapa.jpg" alt="">
-        <button id="but-rambla" class="button btn btn-danger">1</button>
-        <button id="but-subirach" class="button btn btn-danger">2</button>
-        <button id="but-gandhi" class="button btn btn-danger">3</button>
-        <button id="but-park" class="button btn btn-danger">4</button>
-        <button id="but-bogatell" class="button btn btn-danger">5</button>
-        <button id="but-cementerio" class="button btn btn-danger">6</button>
-        <button id="but-beso" class="button btn btn-danger">7</button>
-        <button id="but-maria" class="button btn btn-danger">8</button>
-        <button id="but-prim" class="button btn btn-danger">9</button>
-        </div>
-
-    
-
+        <header>
+            <h1>WHAT TO VISIT?</h1>
+        </header>
+        <section id="map-place">
+            <img id="map" class="img-fluid" src="img/mapa.jpg" alt="">
+            <button id="but-rambla" class="button btn btn-danger" value="text1" >1</button>
+            <button id="but-subirach" class="button btn btn-danger" value="text2" >2</button>
+            <button id="but-gandhi" class="button btn btn-danger" value="text3" >3</button>
+            <button id="but-park" class="button btn btn-danger" value="text4" >4</button>
+            <button id="but-bogatell" class="button btn btn-danger" value="text5" >5</button>
+            <button id="but-cementerio" class="button btn btn-danger" value="text6" >6</button>
+            <button id="but-beso" class="button btn btn-danger" value="text7" >7</button>
+            <button id="but-maria" class="button btn btn-danger" value="text8" >8</button>
+            <button id="but-prim" class="button btn btn-danger" value="text9" >9</button>
+        </section>
+        <article id="text1" class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+            </div>
+            <div class="position"> <button class="btn btn-danger">Know more ...</button></div>
+            <div class="position"><button class="btn btn-danger">Know less ...</button></div>
+        </article>
+        <article id="text2" class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+            </div>
+            <div class="position"> <button class="btn btn-danger ">Know more ...</button></div>
+            <div class="position"><button class="btn btn-danger ">Know less ...</button></div>
+           
+        </article>
+        <article id="text3" class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+            </div>
+            <div class="position"> <button  class="btn btn-danger ">Know more ...</button></div>
+            <div class="position"><button  class="btn btn-danger ">Know less ...</button></div>
+           
+        </article>
+        <article id="text4" class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+            </div>
+            <div class="position"> <button  class="btn btn-danger ">Know more ...</button></div>
+            <div class="position"><button  class="btn btn-danger ">Know less ...</button></div>
+           
+        </article>
+        <article id="text5"  class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+            </div>
+            <div class="position"> <button  class="btn btn-danger ">Know more ...</button></div>
+            <div class="position"><button id="less5" class="btn btn-danger ">Know less ...</button></div>
+           
+        </article>
+        <article id="text6" class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+            </div>
+            <div class="position"> <button  class="btn btn-danger ">Know more ...</button></div>
+            <div class="position"><button  class="btn btn-danger ">Know less ...</button></div>
+           
+        </article>
+        <article id="text7" class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto7">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+            </div>
+            <div class="position"> <button  class="btn btn-danger ">Know more ...</button></div>
+            <div class="position"><button  class="btn btn-danger ">Know less ...</button></div>
+           
+        </article>
+        <article id="text8" class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto8">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+            </div>
+            <div class="position"> <button  class="btn btn-danger ">Know more ...</button></div>
+            <div class="position"><button  class="btn btn-danger ">Know less ...</button></div>
+           
+        </article>
+        <article id="text9" class="hidden">
+            <img class="float-left img-fluid resize" src="img/rambla.jpg" alt="">
+            <h2>Rambla de Poblanou</h2>
+            <h3>Subtitulo</h3>
+            <div id="texto9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut quos ea, incidunt nulla dignissimos saepe enim quam vero a molestias non? Laudantium molestiae ratione modi suscipit illum quos expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente fugiat placeat voluptas magnam magni ullam nam veritatis quisquam minus adipisci, facilis vitae numquam et voluptate ab dolorem nihil minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt sapiente fugiat sit nihil nulla vel eaque reprehenderit libero incidunt deleniti sed est tenetur esse cumque illo, magnam, laboriosam explicabo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores soluta, in nulla hic animi at maxime repellat doloribus nihil similique nemo? Animi dolore qui commodi debitis totam minus repellendus soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos exercitationem modi excepturi cum, rem quisquam fugiat praesentium dolores architecto consequuntur veniam, saepe sit voluptatibus suscipit labore amet quis maiores.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorum id nihil illo excepturi! Totam quae accusamus dignissimos quibusdam. Id, adipisci commodi. Ipsam at nesciunt quibusdam dolor distinctio, molestiae sit!</p>
+            </div>
+            <div class="position"> <button  class="btn btn-danger ">Know more ...</button></div>
+            <div class="position"><button  class="btn btn-danger ">Know less ...</button></div>
+           
+        </article>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
