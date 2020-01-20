@@ -65,6 +65,10 @@ img.detail-modal {
     width: 100%;
 }
 
-/* .card-img {
-    margin: 8px;
-} */
+.opacity80 {
+    opacity: 80%;
+}
+
+.nav-pic p{
+    text-align: center;
+}
