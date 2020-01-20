@@ -1,5 +1,5 @@
 header{
-    height: 600px;
+    height: 100vh;
     object-fit: cover;
     backdrop-filter: grayscale(30%);
     display:block;
@@ -25,3 +25,18 @@ header::after {
     color: rojo;
 }
 
+.cardex {
+    height: 50vh;
+}
+
+.centered-text {
+    display: flex;
+}
+
+.detail-modal {
+    width: 80%;
+}
+
+#news-field {
+    height: 100vh;
+}
