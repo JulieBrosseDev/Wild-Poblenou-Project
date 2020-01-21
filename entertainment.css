@@ -25,6 +25,36 @@ header::after {
 
 #nav-tab .nav-link {
     flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#nav-tab .nav-link h4 {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    text-shadow: 2px 6px 6px rgba(0,0,0,.4);
+}
+
+/* https://github.com/daneden/animate.css/blob/master/source/attention_seekers/pulse.css */
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+#nav-tab .nav-link:hover h4 {
+    animation-name: pulse;
 }
 
 .nav-tabs {
