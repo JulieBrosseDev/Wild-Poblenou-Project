@@ -23,14 +23,42 @@
 /* This media is mad in order to make the first carousel disappear and let the other one appearing */
 
 @media (max-width: 1000px) {
-  .card {
+  #main-news-background * {
+    opacity: 0;
+  }
+  #main-news-background {
+    opacity: 0;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  #news-small-screen-design * {
     opacity: 0;
   }
 }
 
 
 
+h1 {
+  position: relative;
+}
 
+
+#news-small-screen-design {
+  position: absolute;
+  top: 5%;
+}
+
+#news-small-screen-design .container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#news-small-screen-responsive {
+}
 
 header{
     height: 100vh;
@@ -72,7 +100,7 @@ header::after {
     width: 80%;
 }
 
-#news-field {
+#main-news-field {
     height: 100vh;
 }
 
