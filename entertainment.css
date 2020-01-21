@@ -39,6 +39,7 @@ header::after {
 .card.mb-12 {
     margin-left: 16px;
     margin-right: 16px;
+    margin-bottom: 10px;
 }
 
 h3.submenu-title {
@@ -72,3 +73,58 @@ img.detail-modal {
 .nav-pic p{
     text-align: center;
 }
+
+.tab-pane.fade.active.show {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER CSS */
+a:hover{
+    color: black;
+ }
+
+ footer{
+     background-color: #E8E9E8;
+  }
+  
+ ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ ul li a{
+    text-decoration: none;
+    color: black;
+ }
+ div.social-media{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+ .nav-list{
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .nav-list>li{
+    margin: 0 10px;
+ }
+ .social-media i{
+  color: blue;
+  font-size: large;
+ }
+ .col-md-3 .mx-auto {
+ margin: 0 15px;
+ padding: 5px;
+ }
