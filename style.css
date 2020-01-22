@@ -38,27 +38,17 @@
   }
 }
 
-
-
 h1 {
   position: relative;
 }
 
 
 #news-small-screen-design {
-  position: absolute;
-  top: 5%;
-}
-
-#news-small-screen-design .container {
   width: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
-#news-small-screen-responsive {
-}
 
 header{
     height: 100vh;
