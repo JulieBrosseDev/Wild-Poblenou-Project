@@ -38,6 +38,16 @@
   }
 }
 
+
+.container {
+  position: relative;
+}
+
+#news-small-screen-design {
+  position: absolute;
+  top: 0;
+}
+
 h1 {
   position: relative;
 }
