@@ -24,17 +24,21 @@
 
 @media (max-width: 1000px) {
   #main-news-background * {
-    opacity: 0;
+    display: none;
   }
   #main-news-background {
-    opacity: 0;
+    display: none;
+  }
+  #news-small-screen-design * {
+  position: absolute;
+  top: 0;
   }
 }
 
 
 @media (min-width: 1000px) {
   #news-small-screen-design * {
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -97,7 +101,7 @@ header::after {
 }
 
 .detail-modal {
-    width: 80%;
+    width: 100%;
 }
 
 #main-news-field {
