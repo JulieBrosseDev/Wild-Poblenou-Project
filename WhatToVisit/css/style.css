@@ -58,15 +58,13 @@ header{
 }
 .resize{
     width:30%;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 article{
     padding-top: 20px;
     padding-bottom: 20px;
     
-}
-article img{
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 #texto1, #texto2, #texto3, #texto4, #texto5, #texto6, #texto7, #texto8, #texto9{
     height: 200px;
@@ -78,10 +76,47 @@ article img{
     justify-content: flex-end;
 }
 
-.hidden{
-    display: none;
-}
-
+/*footer style*/
+a:hover{
+    color: black;
+ }
+  footer{
+     background-color: #E8E9E8;
+  }
+ ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ ul li a{
+    text-decoration: none;
+    color: black;
+ }
+ div.social-media{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+ .nav-list{
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .nav-list>li{
+    margin: 0 10px;
+ }
+ .social-media i{
+  color: blue;
+  font-size: large;
+ }
+ .col-md-3 .mx-auto {
+ margin: 0 15px;
+ padding: 5px;
+ }
+ /*finish footer style*/
 
 @media only screen and (max-width: 900px ) {
     .resize{
