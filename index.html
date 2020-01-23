@@ -11,37 +11,39 @@
     <title>Visit and live in Poblenou</title>
 </head>
 <body>
+  <div class="container">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-          <a class="navbar-brand" href="#"><strong>MDB</strong></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+        <a class="navbar-brand" href="#">WILD POBLENOU </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
-              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">What to visit <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Entertainments</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+            </li>
+            
             </ul>
-            <form class="form-inline">
-              <div class="md-form my-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              </div>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-          </div>
-      </nav>
+        </div>
+    </nav>
 
         
         <h1 id="welcome-page-title" class="display-3">WELCOME TO <br> POBLENOU</h1>
         </header>
 
-        <div class="container">
+        
           <div id="main-news-background" style="background-color: white;">
             <section id="main-news-field">
             <h2>Last News</h2>
@@ -200,39 +202,35 @@
               </a>
             </div>
           </section>
-
+        </div>
 
           <!--  Here start the section supposed to appear on small screens  -->
-
-          </div>
-          <section id="news-small-screen-design " style="height: 100vh">
-          <div class="row">
+          <section id="news-small-screen-design" style="height: 100vh">
+            <div class="row">
+              <div class="col">
+              <div class="card" style="width: 18em;">
+                <img src="./images/bar.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoFirst">
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="col">
-            <div class="card" style="width: 18em;">
-              <div class="card-body">
-                <div class="card-background-img" style="height:50px"></div>
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoFirst">
-                  Know More
-                </button>
+              <div class="card" style="width: 18em;">
+                <img src="./images/inside.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoSecond">
+                    Know More
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col">
-            <div class="card" style="width: 18em;">
-              <div class="card-body">
-                <div class="card-background-img" style="height:50px"></div>
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoFirst">
-                  Know More
-                </button>
-              </div>
-            </div>
-          </div>
-          </div>
         </section>
       </div>
   

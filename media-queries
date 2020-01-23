@@ -1,0 +1,39 @@
+
+@media screen and (max-width: 300px) {
+  #welcome-page-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+/* This media is mad in order to make the first carousel disappear and let the other one appearing */
+
+@media (min-width: 999px) {
+  #news-small-screen-design {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  #main-news-background * {
+    display: none;
+  }
+  #main-news-background {
+    display: none;
+  }
+  #news-small-screen-design * {
+    position: absolute;
+    top: 0;
+  }
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
