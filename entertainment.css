@@ -69,13 +69,13 @@ header::after {
 .card.mb-12 {
     margin-left: 16px;
     margin-right: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 h3.submenu-title {
     margin-left: 16px;
     margin-right: 16px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 hr.submenu-hr {
@@ -108,11 +108,10 @@ img.detail-modal {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
+.card {
+    background-color:#ecf2f9;
+    
+}
 
 
 
@@ -123,6 +122,7 @@ a:hover{
 
  footer{
      background-color: #E8E9E8;
+     padding-top: 12px;
   }
   
  ul{
