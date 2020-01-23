@@ -77,7 +77,7 @@ if(this.screen.width <= 650){
     //alert('holi')
     //forin loop por the object where we have all the articles
     for  (key in places) {
-        document.getElementById('showedArticle').innerHTML +='<div>'+places[key]+'</div>'
+        document.getElementById('showedArticleMobile').innerHTML +='<div>'+places[key]+'</div>'
 
         
     }
