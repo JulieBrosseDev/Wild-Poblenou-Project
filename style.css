@@ -18,29 +18,17 @@
 
 
 header{
-    height: 80vh;
-    backdrop-filter: brightness(60%);
-    display:block;
-    position:relative;
+  background-image: url("images/portada.jpg");
+  height: 80vh;
+  margin-bottom: 5%;
+  backdrop-filter: brightness(60%);
+  display:block;
 }
-
-header::after {
-    background-image: url("images/portada.jpg");
-    background-repeat: no-repeat;
-    content: "";
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    }
 
 
 #welcome-page-title {
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 20%;
     font-family: 'Bowlby One SC', cursive;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -58,7 +46,7 @@ header::after {
 }
 
 #main-news-field {
-    margin-top:10%;
+    margin-top:5%;
 }
 
 .card-background-img {
@@ -77,6 +65,10 @@ header::after {
   header {
     height: 50vh;
   }
+
+  #welcome-page-title {
+    padding-top: 10%;
+  }
 }
 
 @media only screen and (max-width: 766px) {
@@ -89,7 +81,8 @@ header::after {
     margin-bottom: 1px solid black;
   }
   header {
-    height: 30vh;
+    background-image: none;
+    height: 20vh;
     background-color: white;
   }
   header::after {
