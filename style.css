@@ -1,7 +1,21 @@
+.container {
+  position: relative;
+}
+
+#news-small-screen-design {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+h1 {
+  position: relative;
+}
+
 header{
-    height: 600px;
+   height: 100vh; 
     object-fit: cover;
-    backdrop-filter: grayscale(30%);
+    backdrop-filter: brightness(60%);
     display:block;
     position:relative;
 }
@@ -9,7 +23,7 @@ header{
 header::after {
     background-image: url("images/portada.jpg");
     content: "";
-    opacity: 0.5;
+    opacity: 1;
     top: 0;
     left: 0;
     bottom: 0;
@@ -21,7 +35,39 @@ header::after {
 
 #welcome-page-title {
     text-align: center;
-    padding-top: 40vh;
-    color: rojo;
+    padding-top: 30vh;
+    font-family: 'Bowlby One SC', cursive;
+    color: rgba(255, 255, 255, 0.8);
 }
 
+.cardex {
+    height: 50vh;
+}
+
+.centered-text {
+    display: flex;
+}
+
+.detail-modal {
+    width: 100%;
+}
+
+#main-news-field {
+    height: 100vh;
+    margin-top:10%;
+}
+
+.card-background-img {
+  background-image: url("images/bar.webp");
+  height: 50%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #news-small-screen-design {
+    display: block !important;
+  }
+  #main-news-field {
+    display: none;
+  }
+}
