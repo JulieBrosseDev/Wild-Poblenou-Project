@@ -154,11 +154,15 @@ padding: 5px;
 .blue{
    color: blue;
 }
-nav>a{
+/* nav>a{
   font-family: 'Alegreya', serif;
-}
+} */
 @media only screen and (max-width: 1059px) {
   .formedia{
     margin-top: 13px;
   }
+}
+
+.navbar-brand {
+  font-family: ;
 }
