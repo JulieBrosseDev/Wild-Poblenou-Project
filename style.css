@@ -34,6 +34,10 @@ header{
   width: 5%;
 }
 
+.carousel-control-next {
+  width: 5%;
+}
+
 .cardex {
     height: 50vh;
 }
