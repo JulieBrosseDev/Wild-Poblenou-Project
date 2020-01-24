@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/whattovisit.js"></script>
+   
+    
     <title>Document</title>
 </head>
-<body>
+<body> <!-- onresize="quitArticle()" -->
     <div class="container-fluid">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="#">WILD POBLENOU </a>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+            <a class="navbar-brand" href="../index.html">WILD POBLENOU </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,39 +26,120 @@
                     <a class="nav-link" href="#">What to visit <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Entertainments</a>
+                    <a class="nav-link" href="../Entertainment.html">Entertainment</a>
                     </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
+                    <a class="nav-link" href="../contact.html">Contact us</a>
                 </li>
                 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="What to visitexhd?" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav> 
-        <h1>WHAT TO VISIT?</h1>
-    </header>
-        <div id="map-place">
-        <img id="map" class="img-fluid" src="img/mapa.jpg" alt="">
-        <button id="but-rambla" class="button btn btn-danger">1</button>
-        <button id="but-subirach" class="button btn btn-danger">2</button>
-        <button id="but-gandhi" class="button btn btn-danger">3</button>
-        <button id="but-park" class="button btn btn-danger">4</button>
-        <button id="but-bogatell" class="button btn btn-danger">5</button>
-        <button id="but-cementerio" class="button btn btn-danger">6</button>
-        <button id="but-beso" class="button btn btn-danger">7</button>
-        <button id="but-maria" class="button btn btn-danger">8</button>
-        <button id="but-prim" class="button btn btn-danger">9</button>
-        </div>
-
-    
-
+        <header>
+            <h1>WHAT TO VISIT?</h1>
+        </header>
+        <section id="map-place">
+            <img id="map" class="img-fluid" src="img/mapa.jpg" alt="">
+            <button id="but-rambla" class="button btn btn-danger" value="text1" >1</button>
+            <button id="but-subirach" class="button btn btn-danger" value="text2" >2</button>
+            <button id="but-gandhi" class="button btn btn-danger" value="text3" >3</button>
+            <button id="but-park" class="button btn btn-danger" value="text4" >4</button>
+            <button id="but-bogatell" class="button btn btn-danger" value="text5" >5</button>
+            <button id="but-cementerio" class="button btn btn-danger" value="text6" >6</button>
+            <button id="but-beso" class="button btn btn-danger" value="text7" >7</button>
+            <button id="but-maria" class="button btn btn-danger" value="text8" >8</button>
+            <button id="but-prim" class="button btn btn-danger" value="text9" >9</button>
+        </section>
+        <section id="showedArticle"></section>
+        <section id="showedArticleMobile"></section>
+        <button onclick="topFunction()" id="myBtn" class="btn btn-secondary btn-lg back-to-top" title="Go to top">^</button>
+        <footer class="page-footer font-small indigo">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-center">
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+                  <!-- Links -->
+                  <ul class="footer-list list-unstyled">
+                    <li>
+                      <a href="#!">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#!">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+                  <!-- Links -->
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#!">Follow us</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+                  <!-- Links -->
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">Privacy policy</a>
+                    </li>
+                    <li>
+                      <a href="#!">Terms of use and conditions</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+                  <!-- Links -->
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">Site map</a>
+                    </li>
+                    <li>
+                      <a href="#!">Get Wild</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+           
+            <!-- Footer Links -->
+            <br>
+              <div class="social-media">
+                                <ul class="nav-list">
+                                    <li><a href="#" class="icon-link"> <i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" class="icon-link"> <i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href="#" class="icon-link"> <i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="#" class="icon-link"> <i class="fab fa-pinterest-square"></i></a></li>
+                                </ul>
+                </div>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="color: black; font-weight: lighter; font-size: small;">© 2020 Copyright:
+              <a href="https://mdbootstrap.com/education/bootstrap/">Poblenou</a>
+            <!-- Copyright -->
+            </div>
+          </footer>
+          <!-- Footer --> 
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
 </body>
 </html>
