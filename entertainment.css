@@ -1,0 +1,164 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+header {
+    height: auto;
+}
+
+header::after {
+    display: none;
+}
+
+#nav-tab img {
+    width: 100%;
+    height: 100%;
+}
+
+#myTab a {
+    display: block;
+}
+
+.row.one {
+    margin-bottom: 20px;
+}
+
+#nav-tab {
+    display: flex;
+}
+
+#nav-tab .nav-link {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#nav-tab .nav-link h4 {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    text-shadow: 2px 6px 6px rgba(0,0,0,.4);
+}
+
+/* https://github.com/daneden/animate.css/blob/master/source/attention_seekers/pulse.css */
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+#nav-tab .nav-link:hover h4 {
+    animation-name: pulse;
+}
+
+.nav-tabs {
+    border: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: 0;
+}
+
+.card.mb-12 {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+}
+
+h3.submenu-title {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 50px;
+}
+
+hr.submenu-hr {
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+img.detail-modal {
+    width: 100%;
+}
+
+.opacity80 {
+    opacity: 80%;
+}
+
+.nav-pic p{
+    text-align: center;
+}
+
+.tab-pane.fade.active.show {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color:#ecf2f9;
+    
+}
+
+
+
+/* FOOTER CSS */
+a:hover{
+    color: black;
+ }
+
+ footer{
+     background-color: #E8E9E8;
+     padding-top: 12px;
+  }
+  
+ ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ ul li a{
+    text-decoration: none;
+    color: black;
+ }
+ div.social-media{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+ .nav-list{
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .nav-list>li{
+    margin: 0 10px;
+ }
+ .social-media i{
+  color: blue;
+  font-size: large;
+ }
+ .col-md-3 .mx-auto {
+ margin: 0 15px;
+ padding: 5px;
+ }

@@ -26,7 +26,6 @@
     
     window.onload=function(){
     
-
     //create listeners for the buttons
     let buttons = document.getElementsByClassName('button')
     //iterate through the buttons
