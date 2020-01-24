@@ -1,3 +1,7 @@
+.inline-center{
+  margin: auto;
+}
+
 .container {
   position: relative;
 }
@@ -8,9 +12,10 @@
   display: none;
 }
 
-h1 {
-  position: relative;
+#news-small-screen-design h1{
+  text-align: center;
 }
+
 
 header{
     height: 80vh;
@@ -62,12 +67,15 @@ header::after {
   width: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1030px) {
   #news-small-screen-design {
     display: block !important;
   }
   #main-news-field {
     display: none;
+  }
+  header {
+    height: 50vh;
   }
 }
 
@@ -81,7 +89,7 @@ header::after {
     margin-bottom: 1px solid black;
   }
   header {
-    height: 20vh;
+    height: 30vh;
     background-color: white;
   }
   header::after {
