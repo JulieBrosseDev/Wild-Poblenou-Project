@@ -16,21 +16,22 @@
   text-align: center;
 }
 
-
 header{
   background-image: url("images/portada.jpg");
   height: 80vh;
   margin-bottom: 5%;
-  backdrop-filter: brightness(60%);
   display:block;
 }
 
-
 #welcome-page-title {
     text-align: center;
-    padding-top: 20%;
+    padding-top: 10%;
     font-family: 'Bowlby One SC', cursive;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
+}
+
+.carousel-control-prev {
+  width: 5%;
 }
 
 .cardex {
@@ -87,5 +88,73 @@ header{
   }
   header::after {
     display: none;
+  }
+}
+
+
+/* footer */
+.main-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap ;
+}
+.square{
+  width: 450px;
+  height: auto;
+  margin: 0 40px;
+}
+.head-contact{
+  text-align: center;
+}
+footer a:hover{
+  color: black;
+}
+footer{
+    margin-top: 10px;
+    padding-top: 12px;
+   background-color: #E8E9E8;
+}
+footer ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li a{
+  text-decoration: none;
+  color: black;
+}
+div.social-media{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer .nav-list{
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .nav-list>li{
+  margin: 0 10px;
+}
+footer .social-media i{
+color: blue;
+font-size: large;
+}
+.col-md-3 .mx-auto {
+margin: 0 15px;
+padding: 5px;
+}
+.blue{
+   color: blue;
+}
+nav>a{
+  font-family: 'Alegreya', serif;
+}
+@media only screen and (max-width: 1059px) {
+  .formedia{
+    margin-top: 13px;
   }
 }
